@@ -8,6 +8,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Install any needed packages specified in requirements.txt
+RUN python -m pip install --updagrade pip
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
